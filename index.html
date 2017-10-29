@@ -7,8 +7,26 @@
 	   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <title></title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
+
+        <div id="influx">
+            <header id="showcase">              
+                <ul class="list-inline">
+                  <li><a href="#">What is <strong><em>Hacktoberfest</em></strong>?</a></li>
+                  <li><a href="#">How to participate?</a></li>
+                  <li><a href="#">What you earn with it?</a></li>
+                </ul>
+                <img src="img/hacklogo.png">
+                <a href="#body"><button class="btn btn-danger btn-lg">Learn More</button></a>
+                <hr>
+                <ul class="list-inline">
+                    <li><p><strong>You still have</strong></p></li>
+                    <li><p id="cd"></p></li>
+                </ul>
+            </header>
+        </div>
 
     <h1> <b> <u> this is a test page</h1></b></u>  
 
@@ -21,6 +39,23 @@
         <p> I can do this! </p>
 	    <h2><p>this is a good tag in html</p></h2>
         <strong>I did it.</strong>
+
+        <script>
+		var countDownDate = new Date("Nov 1, 2017 00:00:00").getTime();
+		var x = setInterval(function() {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("cd").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("cd").innerHTML = "Hacktoberfest 2017 has finished";
+			}
+		}, 1000);
+        </script>
     </body>
 </html>
-
