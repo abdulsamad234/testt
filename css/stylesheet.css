@@ -1,9 +1,51 @@
 * {
-  background-color: blue;
+  margin: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
-body{
-background-color:red;
+body {
+  font-size: 1.5em;
+  color: #FFF;
+  line-height: 1.6;
+  background-color: red;
 }
 
+/* showcase */
+#showcase {
+	background-color: #095782;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 20px;
+	text-align: center;
+	}
+
+#showcase img {
+	height: 70%;
+}
+
+#showcase a {
+  text-decoration: none;
+  color: #4ab5ef;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#showcase a:hover {
+  color: #F48F42;
+}
+
+#showcase p {
+	color: #4ab5ef;
+	font-size: 1.5em;
+ 	text-align: center;
+}
 
