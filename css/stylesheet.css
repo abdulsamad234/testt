@@ -9,11 +9,14 @@ h3 {
 }
 
 .topnav {
-  background-color: #333;
   display: flex;
   margin: 0 auto;
 }
-
+body{
+  background-size: 200%;
+  background-image: linear-gradient(to bottom left, #be1c70 0%, #828dfe 50%, #6d58f3 100%);}
+body:hover
+{ background-position: 100% 50%;}
 .hero {
     width: 100vw;
 }
